@@ -5,7 +5,7 @@
 
 # An example controller showing a sample home page
 
-GET     /greeting                   controllers.PolygonController.greeting()
+
 GET     /allPolygons                controllers.PolygonController.allPolygons()
 POST    /addPolygon                 controllers.PolygonController.addPolygon()
 POST    /checkPoint                 controllers.PolygonController.checkThisPoint()

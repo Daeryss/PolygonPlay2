@@ -8,10 +8,6 @@ import services.PolygonService
 
 class PolygonController @Inject() (polygonService: PolygonService) extends InjectedController {
 
-  def greeting() = Action {
-    Ok("Polygon service again say 'Hello'")
-  }
-
   def addPolygon = Action(parse.json) { implicit request =>
     val points:List[MyPoint] = request.body.as[List[MyPoint]]
     var len = points.length
